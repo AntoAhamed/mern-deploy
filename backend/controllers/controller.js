@@ -1,4 +1,4 @@
-const Note = require('../models/Note');
+const Note = require('../models/note');
 const dotenv = require('dotenv');
 
 dotenv.config();
