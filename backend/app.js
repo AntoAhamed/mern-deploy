@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-    origin: "http://localhost:3000" // frontend URI (ReactJS)
+    origin: "https://mern-deploy-omega-eight.vercel.app" // frontend URI (ReactJS)
 }
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
