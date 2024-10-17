@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+}
+
+nav {
+    background-color: aliceblue;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 40px;
+    margin: 25px 325px;
+}
+
+form textarea {
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 15px 325px;
+}
+
+form button {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 7px;
+    margin: 5px 325px;
+    background-color: rgb(137, 180, 223);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(63, 136, 209);
+}
