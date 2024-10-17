@@ -6,7 +6,7 @@ function Notes() {
 
     const fetch = async () => {
         try {
-            const { data } = await axios.get('http://localhost:5000/api/routes/get-notes')
+            const { data } = await axios.get('https://mern-deploy-9i21.onrender.com/api/routes/get-notes')
             if (data.message === 'something went wrong') {
                 alert("Something went wrong.")
             } else {
@@ -19,10 +19,10 @@ function Notes() {
 
     const handleRemove = async (id) => {
         try {
-            const { data } = await axios.delete(`http://localhost:5000/api/routes/remove-note/${id}`)
+            const { data } = await axios.delete(`https://mern-deploy-9i21.onrender.com/api/routes/remove-note/${id}`)
             if (data.message === 'ok') {
                 fetch()
-                
+
                 alert("Successfully removed.")
             } else {
                 alert("Something went wrong.")

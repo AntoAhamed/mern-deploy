@@ -9,7 +9,7 @@ function AddNote() {
         e.preventDefault()
 
         try{
-            const {data} = await axios.post('http://localhost:5000/api/routes/add-note', {title, desc})
+            const {data} = await axios.post('https://mern-deploy-9i21.onrender.com/api/routes/add-note', {title, desc})
             if(data.message==='ok'){
                 alert("Note added successfully.")
                 setTitle('')
