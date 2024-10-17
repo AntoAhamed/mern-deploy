@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-    origin: "hhttps://mern-deploy-client-i7b2.onrender.com" // frontend URI (ReactJS)
+    origin: "https://mern-deploy-client-i7b2.onrender.com" // frontend URI (ReactJS)
 }
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
